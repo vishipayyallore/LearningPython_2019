@@ -15,12 +15,15 @@ class DataTypesDemo:
 
 # Defining a tuple without any element
 tupleEmpty = ()
-#print(tupleEmpty)
 dataTypeObject = DataTypesDemo(tupleEmpty)
 dataTypeObject.displayDetails()
 
 tuplePerson = (1, 'Shiva Sai', 24,567.90)
-#print(tuplePerson)
 dataTypeObject = DataTypesDemo(tuplePerson)
+dataTypeObject.displayDetails()
+
+# TODO: Work on nested Tuples
+tupleEmployee = (1, 'A1001', 24)
+dataTypeObject = DataTypesDemo( (tuplePerson, tupleEmployee) )
 dataTypeObject.displayDetails()
 

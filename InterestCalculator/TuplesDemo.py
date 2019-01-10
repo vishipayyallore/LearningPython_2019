@@ -1,4 +1,4 @@
-print("----- Tuples Demo -----")
+# ----------------------------------
 
 class DataTypesDemo:
     Instances = 0
@@ -12,6 +12,9 @@ class DataTypesDemo:
         print('DataTypesDemo.Instances: ', self.Instances)
         print('Tuple Data: ', self.tupleObject)
         print()
+# ----------------------------------
+
+print("----- Tuples Demo -----")
 
 # Defining a tuple without any element
 tupleEmpty = ()

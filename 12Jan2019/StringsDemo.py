@@ -25,5 +25,19 @@ multilineString = """
 """
 stringDemo.displayDetails("Multiline Demo", multilineString)
 
+# concatenate with + operator, and repeated with *
+chant = "Hare " + "Krishna "
+stringDemo.displayDetails("+ Add Strings", chant)
 
+# Two or more string literals next to each other are automatically concatenated.
+chant = "Hare " "Krishna "
+stringDemo.displayDetails("+ Add Strings", chant)
+
+chant = "Hare Krishna " * 3
+stringDemo.displayDetails("Multiply Strings", chant)
+
+# to break long strings
+longText = ('Put several strings within parentheses ' 
+            'to have them joined together.')
+stringDemo.displayDetails("Long Strings", longText)
 

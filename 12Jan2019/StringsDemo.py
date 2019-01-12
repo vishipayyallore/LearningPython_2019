@@ -41,3 +41,6 @@ longText = ('Put several strings within parentheses '
             'to have them joined together.')
 stringDemo.displayDetails("Long Strings", longText)
 
+# in operator for string search
+searchString = "Hare"
+print( f'Is "{searchString}" present in "{chant}" {searchString in chant}')

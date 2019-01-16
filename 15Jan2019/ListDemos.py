@@ -30,3 +30,11 @@ listDemo.displayDetails("List Slicing", squares[:])
 
 listDemo.displayDetails("List Concatenation", squares + integerList) 
 
+# Nested List
+lowerCase = [ 'a', 'b', 'c', 'd' ]
+upperCase = [ 'A', 'B', 'C', 'D' ]
+numbers = [ 1, 2, 3, 4 ]
+universalSet = [lowerCase, upperCase, numbers]
+listDemo.displayDetails("Nested List", universalSet) 
+
+

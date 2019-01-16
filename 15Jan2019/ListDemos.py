@@ -21,3 +21,12 @@ listDemo.displayDetails(title, listOne)
 integerList = [10, 20, 30]
 listDemo.displayDetails(title, integerList)
 
+squares = [1, 4, 9, 16, 25]
+listDemo.displayDetails(title, squares)
+
+listDemo.displayDetails("List Slicing", squares[2:4]) 
+
+listDemo.displayDetails("List Slicing", squares[:]) 
+
+listDemo.displayDetails("List Concatenation", squares + integerList) 
+

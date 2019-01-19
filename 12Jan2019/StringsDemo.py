@@ -1,13 +1,13 @@
 class StringDataTypeDemo:
     Instances = 0
 
-    def __init__( self ):
+    def __init__(self):
         StringDataTypeDemo.Instances += 1
 
-    def displayDetails( self, title, value ):
+    def displayDetails(self, title, value):
         print(f"----- {title} -----")
-        print( f'StringDataTypeDemo.Instances: {self.Instances}')
-        print( f"Value: {value}")
+        print(f'StringDataTypeDemo.Instances: {self.Instances}')
+        print(f"Value: {value}")
 
 
 title = "String Demo"
@@ -37,10 +37,10 @@ chant = "Hare Krishna " * 3
 stringDemo.displayDetails("Multiply Strings", chant)
 
 # to break long strings
-longText = ('Put several strings within parentheses ' 
+longText = ('Put several strings within parentheses '
             'to have them joined together.')
 stringDemo.displayDetails("Long Strings", longText)
 
 # in operator for string search
 searchString = "Hare"
-print( f'Is "{searchString}" present in "{chant}" {searchString in chant}')
+print(f'Is "{searchString}" present in "{chant}" {searchString in chant}')

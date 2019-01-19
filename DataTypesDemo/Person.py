@@ -7,11 +7,12 @@ class Person:
         self.age = age
         Person.instances += 1
 
-    def displayDetails( self ):
+    def displayDetails(self):
         print("----- Person Details -----")
         print('Person.Instances: ', self.instances)
         print('Person: ', self.id, self.name, self.age)
         print()
+
 
 person1 = Person(1, "Shiva Sai", 34)
 person1.displayDetails()

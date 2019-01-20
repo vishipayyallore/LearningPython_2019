@@ -1,6 +1,5 @@
 # Fibonacci series
 
-
 class FibonacciSeriesDemo:
     Instances = 0
 

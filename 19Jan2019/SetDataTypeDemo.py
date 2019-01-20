@@ -16,3 +16,7 @@ setDataType = SetDataTypeDemo()
 
 numbersSet = { 3, 7, 11, 15 }
 setDataType.displaySetValues(title, numbersSet)
+
+# Mixed data types set
+mixedDataSet = {11, 1.1, "11", (1, 2)}
+setDataType.displaySetValues(title, mixedDataSet)

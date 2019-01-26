@@ -15,7 +15,7 @@ title = "Set Data Type Demo"
 setDataType = SetDataTypeDemo()
 
 # set can't store duplicate
-numbersSet = { 3, 7, 11, 15 }
+numbersSet = { 3, 7, 11, 15, 15, 15 }
 setDataType.displaySetValues(title, numbersSet)
 
 # Mixed data types set

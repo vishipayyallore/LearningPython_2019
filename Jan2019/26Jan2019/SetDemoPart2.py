@@ -34,3 +34,9 @@ print(f'Locals -> {vars}')
 details = dict(vars)
 for local in details:
         print(f'{local} == {details[local]}  ')
+
+
+# Adding an element to the set
+emptySet1.add( 9 )
+emptySet1.add( 12 )
+setDataType.displayType(title, emptySet1)

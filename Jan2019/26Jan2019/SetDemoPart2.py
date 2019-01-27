@@ -29,6 +29,8 @@ setDataType.displayType(title1, emptySet)
 setDataType.displayType(title1, emptySet1)
 
 vars = locals()
-print(vars)
-for k, v in vars.items():
-        print(f'{k} = {k}')
+print(f'Locals -> {vars}')
+
+details = dict(vars)
+for local in details:
+        print(f'{local} == {details[local]}  ')

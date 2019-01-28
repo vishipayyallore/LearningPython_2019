@@ -28,15 +28,11 @@ emptySet1 = set()
 setDataType.displayType(title1, emptySet)
 setDataType.displayType(title1, emptySet1)
 
-vars = locals()
-print(f'Locals -> {vars}')
-
-details = dict(vars)
-for local in details:
-    print(f'{local} == {details[local]}  ')
-
-
 # Adding an element to the set
 emptySet1.add(9)
 emptySet1.add(12)
-setDataType.displayType(title, emptySet1)
+emptySet1.update({"Shiva", "Sai"})
+emptySet1.update({12.34, 23.57})
+setDataType.displaySetValues(title, emptySet1)
+
+

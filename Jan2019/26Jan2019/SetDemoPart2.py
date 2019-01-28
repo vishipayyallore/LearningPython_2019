@@ -31,8 +31,12 @@ setDataType.displayType(title1, emptySet1)
 # Adding an element to the set
 emptySet1.add(9)
 emptySet1.add(12)
+
+# Adding Multiple values
 emptySet1.update({"Shiva", "Sai"})
 emptySet1.update({12.34, 23.57})
+
+# list and a set as elements
+emptySet1.update({"Shiva", "Sai"}, {92.56, 56.45, 78.45, 12.34})
+
 setDataType.displaySetValues(title, emptySet1)
-
-

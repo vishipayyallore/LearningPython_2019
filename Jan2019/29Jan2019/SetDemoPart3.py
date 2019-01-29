@@ -31,4 +31,16 @@ newSetValues = {22, 33, 55, 77, 99}
 setDataType.displaySetValues(title, newSetValues)
 setDataType.displayType(title1, newSetValues)
 
+# Removing element
+newSetValues.discard(22)
+setDataType.displaySetValues(title, newSetValues)
+
+newSetValues.pop()
+setDataType.displaySetValues(title, newSetValues)
+
+newSetValues.pop()
+setDataType.displaySetValues(title, newSetValues)
+
+newSetValues.clear()
+setDataType.displaySetValues(title, newSetValues)
 

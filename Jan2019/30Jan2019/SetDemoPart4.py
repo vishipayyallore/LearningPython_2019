@@ -7,7 +7,7 @@ class SetDataTypeDemo:
 
     def displaySetValues(self, title, value):
         try:
-            print(f"----- {title} -----")
+            print(f"----- {title} Length: {len(value)} -----")
             print(f'SetDataTypeDemo.Instances: {self.Instances}')
             print(f'{value}')
         except Exception as error:
@@ -23,24 +23,17 @@ class SetDataTypeDemo:
 
 
 title = "Set Data Type Demo"
-title1 = "Identify Data Type Demo"
 
 setDataType = SetDataTypeDemo()
 
-newSetValues = {22, 33, 55, 77, 99}
-setDataType.displaySetValues(title, newSetValues)
-setDataType.displayType(title1, newSetValues)
+oddNumbers = {1, 3, 5, 7, 9}
+evenNumbers = {2, 4, 6, 8, 0}
 
-# Removing element
-newSetValues.discard(22)
-setDataType.displaySetValues(title, newSetValues)
+setDataType.displaySetValues(title, oddNumbers)
+setDataType.displaySetValues(title, evenNumbers)
+setDataType.displaySetValues(title, (oddNumbers | evenNumbers))
 
-newSetValues.pop()
-setDataType.displaySetValues(title, newSetValues)
-
-newSetValues.pop()
-setDataType.displaySetValues(title, newSetValues)
-
-newSetValues.clear()
-setDataType.displaySetValues(title, newSetValues)
-
+setDataType.displaySetValues("Union", oddNumbers.union(evenNumbers))
+setDataType.displaySetValues("Intersection", oddNumbers.intersection(evenNumbers))
+#setDataType.displaySetValues("Union", oddNumbers.union(evenNumbers))
+#setDataType.displaySetValues("Union", oddNumbers.union(evenNumbers))

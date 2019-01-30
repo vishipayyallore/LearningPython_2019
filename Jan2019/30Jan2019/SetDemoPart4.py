@@ -58,3 +58,7 @@ setDataType.displaySetValues(
     "Symmetric Difference", oddNumbers.symmetric_difference(evenNumbers))
 
 setDataType.displayIndividualElements("Display Individual Elements", oddNumbers)
+
+print(f"Is '22' exists in oddNumbers set? {22 in oddNumbers}")
+print(f"Is '44' exists in oddNumbers set? {44 in oddNumbers}")
+

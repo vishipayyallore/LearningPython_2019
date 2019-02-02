@@ -34,5 +34,9 @@ class DictDataTypeDemo:
 # --------------------------------------------------------------------------------
 title = "Set Data Type Demo"
 
-setDataType = DictDataTypeDemo()
+dictDataType = DictDataTypeDemo()
 
+# Empty Dictionary
+dictObject1 = {}
+
+friuts = {1: 'Apple', 2: 'Orange'}

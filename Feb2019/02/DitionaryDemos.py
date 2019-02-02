@@ -5,19 +5,11 @@ class DictDataTypeDemo:
     def __init__(self):
         DictDataTypeDemo.Instances += 1
 
-    def displaySetValues(self, title, value):
+    def displayDictionaryValues(self, title, value):
         try:
             print(f"----- {title} Length: {len(value)} -----")
             print(f'DictDataTypeDemo.Instances: {self.Instances}')
             print(f'{value}')
-        except Exception as error:
-            print("Error in DictDataTypeDemo::displaySetValues:", error)
-
-    def displayType(self, title, theObject):
-        try:
-            print(f"----- {title} -----")
-            print(f'DictDataTypeDemo.Instances: {self.Instances}')
-            print(f'{type(theObject)}')
         except Exception as error:
             print("Error in DictDataTypeDemo::displaySetValues:", error)
 
@@ -38,5 +30,7 @@ dictDataType = DictDataTypeDemo()
 
 # Empty Dictionary
 dictObject1 = {}
+dictDataType.displayDictionaryValues(title, dictObject1)
 
 friuts = {1: 'Apple', 2: 'Orange'}
+dictDataType.displayDictionaryValues(title, friuts)

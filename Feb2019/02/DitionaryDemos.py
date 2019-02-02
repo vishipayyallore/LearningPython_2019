@@ -17,8 +17,8 @@ class DictDataTypeDemo:
         try:
             print(f"----- {title} -----")
             print(f'DictDataTypeDemo.Instances: {self.Instances}')
-            for currentElement in theSetOfElements:
-                print(currentElement)
+            for currentKey in theSetOfElements:
+                print(f'{currentKey} = {theSetOfElements[currentKey]}')
         except Exception as error:
             print("Error in DictDataTypeDemo::displayIndividualElements:", error)
 
@@ -34,3 +34,5 @@ dictDataType.displayDictionaryValues(title, dictObject1)
 
 friuts = {1: 'Apple', 2: 'Orange'}
 dictDataType.displayDictionaryValues(title, friuts)
+
+dictDataType.displayIndividualElements(title, friuts)

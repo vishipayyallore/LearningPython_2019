@@ -37,6 +37,18 @@ dictDataType.displayDictionaryValues(title, friuts)
 
 dictDataType.displayIndividualElements(title, friuts)
 
-family = {'id': 1, 'name': "Shiva", 'salary': 12345.67, 'subjects': ['CSharp', 'Angular']}
+family = {'id': 1, 'name': "Shiva", 'salary': 12345.67,
+          'subjects': ['CSharp', 'Angular']}
 dictDataType.displayDictionaryValues(title, family)
 dictDataType.displayIndividualElements(title, family)
+
+# from dict() method
+friuts = dict({1: 'Apple', 2: 'Orange', 3: 'Grapes'})
+dictDataType.displayDictionaryValues(title, friuts)
+dictDataType.displayIndividualElements(title, friuts)
+
+
+# from dict() method using Tuples
+friuts = dict([(1, 'Apple'), (2, 'Orange'), (3, 'Grapes'), (4, 'Mango')])
+dictDataType.displayDictionaryValues(title, friuts)
+dictDataType.displayIndividualElements(title, friuts)

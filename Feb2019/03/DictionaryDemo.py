@@ -36,3 +36,7 @@ friuts = {1: 'Apple', 2: 'Orange'}
 dictDataType.displayDictionaryValues(title, friuts)
 
 dictDataType.displayIndividualElements(title, friuts)
+
+family = {'id': 1, 'name': "Shiva", 'salary': 12345.67, 'subjects': ['CSharp', 'Angular']}
+dictDataType.displayDictionaryValues(title, family)
+dictDataType.displayIndividualElements(title, family)

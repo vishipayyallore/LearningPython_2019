@@ -7,7 +7,8 @@ class DictDataTypeDemo:
 
     def displayDictionaryValues(self, title, value):
         try:
-            print(f"----- {title} | Length: {len(value)} | Instances: {self.Instances}-----")
+            print(
+                f"----- {title} | Length: {len(value)} | Instances: {self.Instances}-----")
             print(f'DictDataTypeDemo.Instances: {self.Instances}')
             print(f'{value}')
         except Exception as error:

@@ -42,8 +42,8 @@ family = {'id': 1, 'name': "Shiva", 'salary': 12345.67,
 dictDataType.displayDictionaryValues(title, family)
 dictDataType.displayIndividualElements(title1, family)
 
-# from dict() method
-friuts = dict({1: 'Apple', 2: 'Orange', 3: 'Grapes'})
+# from dict() method. It removes the duplicate items.
+friuts = dict({1: 'Apple', 2: 'Orange', 3: 'Grapes', 'Three': 'Grapes', 3: 'Grapes'})
 dictDataType.displayDictionaryValues(title, friuts)
 dictDataType.displayIndividualElements(title1, friuts)
 

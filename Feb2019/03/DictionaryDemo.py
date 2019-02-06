@@ -48,6 +48,6 @@ dictDataType.displayDictionaryValues(title, friuts)
 dictDataType.displayIndividualElements(title1, friuts)
 
 # from dict() method using Tuples
-friuts = dict([(1, 'Apple'), (2, 'Orange'), (3, 'Grapes'), (4, 'Mango')])
+friuts = dict([(1, 'Apple'), (2, 'Orange'), (3, 'Grapes'), (4, 'Mango'), (5, 'Pine Apple')])
 dictDataType.displayDictionaryValues(title, friuts)
 dictDataType.displayIndividualElements(title1, friuts)

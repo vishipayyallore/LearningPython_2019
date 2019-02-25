@@ -13,3 +13,8 @@ class Shape:
             print('{}'.format(self.__area__))
         except Exception as error:
             print("Error in Shape::formatSingleString:", error)
+
+
+# --------------------------------------------------------------------------------
+shapeDemo = Shape(2)
+shapeDemo.displayDetails()

@@ -9,7 +9,6 @@ class Shape:
     def displayDetails(self):
         try:
             print(f"----- Shape | Instances: {self.Instances}-----")
-            print(f'Shape.Instances: {self.Instances}')
             print('{}'.format(self.__area__))
         except Exception as error:
             print("Error in Shape::formatSingleString:", error)

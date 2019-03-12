@@ -1,0 +1,7 @@
+45
+12.34
+"Shiva Sai"
+'Shiva Sai'
+None
+True
+False

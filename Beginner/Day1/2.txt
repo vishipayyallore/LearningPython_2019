@@ -3,3 +3,10 @@ int('45')
 
 float("34.56")
 float('34.567')
+
+str(45)
+str(123.456)
+
+bool('')
+bool("a")
+bool(None)

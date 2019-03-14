@@ -33,3 +33,18 @@ and, or
 4 == 5 or 4 >= 3
 4 > 1 and 4 != 5 or 5 > 3
 
+>>> value1 = 4
+>>> value2 = 4
+>>> value1 is value2
+True
+>>> value2 = 5
+>>> value1 is value2
+False
+>>> value2 = 4
+>>> 
+>>> value1 is value2
+True
+>>> svalue1 = "Shiva"
+>>> svalue2 = "Shiva"
+>>> svalue1 is svalue2
+True

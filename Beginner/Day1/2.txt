@@ -10,3 +10,19 @@ str(123.456)
 bool('')
 bool("a")
 bool(None)
+
+first_name = “Shiva”
+last_name = ‘Sai’
+str()
+
+employee_id = 101
+int()
+
+salary = 1234.56
+float()
+
+is_manager = False
+is_lead = True
+bool()
+
+value = None

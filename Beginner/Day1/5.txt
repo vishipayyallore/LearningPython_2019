@@ -1,0 +1,12 @@
+input("Enter Data")
+
+value1 = input("Enter Data")
+print(value1)
+
+number_value = int(input("Enter Number: "))
+print(number_value)
+
+float_value = float(input("Enter Float: "))
+print(float_value)
+
+bool_value = bool(input("Enter bool: "))

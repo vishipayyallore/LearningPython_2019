@@ -1,6 +1,4 @@
 Arithmetic Operators
-+, -, *, /, // (Integer Division), ** (Exponent), %
-
 4 + 2
 4 - 2
 4 * 2
@@ -9,16 +7,11 @@ Arithmetic Operators
 4 ** 3
 4 % 3
 
-Order of Operations
-PEMDAS: Parentheses Exponent Multiplication Division Addition Subtraction
-
+Order of Operations: PEMDAS: Parentheses Exponent Multiplication Division Addition Subtraction
 1450 / 60 /3
-
 1450 / (60 /3)
 
 Comparison Operators
-<, <=, ==, >=, >, !=
-
 4 < 2
 4 <= 2
 4 == 5
@@ -26,13 +19,12 @@ Comparison Operators
 4 > 1
 4 != 5
 
-Boolean Operators
-and, or
-
+Logical Operators
 4 < 2 and 4 <= 2
 4 == 5 or 4 >= 3
 4 > 1 and 4 != 5 or 5 > 3
 
+Identity Operators
 >>> value1 = 4
 >>> value2 = 4
 >>> value1 is value2
@@ -48,3 +40,8 @@ True
 >>> svalue2 = "Shiva"
 >>> svalue1 is svalue2
 True
+
+Membership Operators
+7 in [3, 7, 9]
+7 not in [3, 5, 9]
+

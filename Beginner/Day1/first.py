@@ -15,6 +15,9 @@ employee_id = int(input("Enter Employee Id: "))
 salary = float(input("Enter Salary: "))
 is_manager = bool(input("Enter Manager Status: "))
 
+# For simulating Error
+# employee_id = int("ABC")
+
 # Displaying the output
 print("====================================================")
 print(f"Employee Details | Date: {today} |")

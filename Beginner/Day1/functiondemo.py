@@ -13,12 +13,12 @@ salary = 0.0
 is_manager = False
 
 
-'''
-    Method to accept into for Employee
-'''
 def get_employee_details():
+    '''
+        Method to accept into for Employee
+    '''
     
-    # making the variables global, so that we can use into another function
+    # using global variables
     global name, employee_id, salary, is_manager
 
     # Accepting Inputs from User
@@ -28,10 +28,11 @@ def get_employee_details():
     is_manager = bool(input("Enter Manager Status: "))
 
 
-"""
-    Method to display the Employee Details
-"""
 def show_employee_details():
+    """
+        Method to display the Employee Details
+    """
+
     # Calculating the date
     todays_date = datetime.datetime.now()
     today = todays_date.strftime('%c')
@@ -47,10 +48,10 @@ def show_employee_details():
     print("----------------------------------------------------")
 
 
-"""
-    main method will invoke other method.
-"""
 def main():
+    """
+        main method will invoke other method.
+    """
     get_employee_details()
     show_employee_details()
 

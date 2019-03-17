@@ -45,3 +45,13 @@ Membership Operators
 7 in [3, 7, 9]
 7 not in [3, 5, 9]
 
+Assignment Operations
+value = 100
+value += 100
+value -= 10
+value *= 2
+value /= 1
+value %= 2
+value //= 2
+value **= 2
+

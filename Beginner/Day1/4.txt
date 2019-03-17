@@ -6,4 +6,7 @@ print("a =", a)
 
 b = a
 # Three objects are passed
-print('a =', a, '= b')
+print('a =', a, '= b’)
+
+name = “Shiva”
+print(f"\tName: {name}")

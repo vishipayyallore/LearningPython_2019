@@ -1,8 +1,3 @@
-first_name = “Shiva”
-last_name = ‘Sai’
-str(45)
-str(123.456)
-
 employee_id = 101
 int("45")
 int('45')
@@ -11,6 +6,11 @@ salary = 1234.56
 float("34.56")
 float('34.567')
 
+first_name = “Shiva”
+last_name = ‘Sai’
+str(45)
+str(123.456)
+
 is_manager = False
 is_lead = True
 bool('')
@@ -18,3 +18,11 @@ bool("a")
 bool(None)
 
 value = None
+
+type(245)
+
+ord('A')
+ord('a')
+chr(97)
+
+type(None)

@@ -18,6 +18,8 @@ is_lead = True
 bool('')
 bool("a")
 bool(None)
+bool([])
+bool([1, 2, 3])
 
 value = None # null value OR Absance
 
@@ -26,5 +28,7 @@ type(245)
 ord('A')
 ord('a')
 chr(97)
+
+
 
 type(None)

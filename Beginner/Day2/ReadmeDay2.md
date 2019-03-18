@@ -17,3 +17,20 @@ slicing
 string.find('ddd') => returns index of first occurence. 
 
 
+if( expression ):
+    statements
+
+>>> if '':
+	print('No')
+
+	
+>>> if 'a':
+	print('Yes')
+
+	
+Yes
+
+
+while expression:
+    statements
+

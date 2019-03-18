@@ -1,6 +1,8 @@
 employee_id = 101
 int("45")
 int('45')
+int( 34.56)
+int(-34.56)
 
 salary = 1234.56
 float("34.56")

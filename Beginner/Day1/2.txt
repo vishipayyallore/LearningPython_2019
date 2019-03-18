@@ -19,7 +19,7 @@ bool('')
 bool("a")
 bool(None)
 
-value = None
+value = None # null value OR Absance
 
 type(245)
 

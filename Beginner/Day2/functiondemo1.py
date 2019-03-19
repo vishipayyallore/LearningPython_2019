@@ -6,8 +6,8 @@ def add_two_numbers(value1, value2):
     return value1 + value2
 
 
-def add_two_numbers_v2(value1: int, value2: int) -> int:
-    return value1 + value2
+def add_two_numbers_v2(value_1: int, value_2: int) -> int:
+    return value_1 + value_2
     
 
 def main():

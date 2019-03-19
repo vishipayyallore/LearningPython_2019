@@ -27,7 +27,6 @@ def get_employee_details():
     salary = float(input("Enter Salary: "))
     is_manager = bool(input("Enter Manager Status: "))
 
-
 def show_employee_details():
     """
         Method to display the Employee Details

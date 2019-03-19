@@ -9,6 +9,11 @@ import datetime
 todays_date = datetime.datetime.now()
 today = todays_date.strftime('%c')
 
+first = "First's"
+last = 'Last"s'
+
+print(f'Contains both Single and Double Quotes: {first} {last}')
+
 # Accepting Inputs from User
 name = input("Enter Your Name: ")
 employee_id = int(input("Enter Employee Id: "))

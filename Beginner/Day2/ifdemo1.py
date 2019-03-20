@@ -1,42 +1,28 @@
 
-def show_banner(value: str, times: int):
-    print(value * times)
+def calculate_down_payment(asset_price: float, credit_report: bool) -> float:
+    down_payment = 0.0
 
-
-def validate_loan_eligibility(has_income: bool, credit_report: bool, payment_default: bool) -> str:
-    if(has_income and (credit_report and (not payment_default))):
-        return "Eligible for loan"
+    if(credit_report):
+        down_payment = 0.1 * asset_price
     else:
-        return "Not Eligible for loan"
+        down_payment = 0.2 * asset_price
 
-
-def get_applicants_details(switch: int):
-    if(switch == 1):
-        return True, True, True
-    elif(switch == 2):
-        return True, False, True
-    elif(switch == 3):
-        return True, True, False
+    return down_payment
 
 
 def main():
+    asset_price = 1000000
+    credit_report = True
 
-    # Assume we got the parameters from other method
-    income, credit, payment_default = get_applicants_details(3)
-    results = validate_loan_eligibility(income, credit, payment_default)
-    print(results)
+    payment = calculate_down_payment(asset_price, credit_report)
+    print(f'Your Down Payment: {payment}')
 
-    income, credit, payment_default = get_applicants_details(1)
-    results = validate_loan_eligibility(income, credit, payment_default)
-    print(results)
+    asset_price = 2000000
+    credit_report = False
 
-    income, credit, payment_default = get_applicants_details(3)
-    results = validate_loan_eligibility(income, credit, payment_default)
-    print(results)
+    payment = calculate_down_payment(asset_price, credit_report)
+    print(f'Your Down Payment: {payment}')
 
-    income, credit, payment_default = get_applicants_details(2)
-    results = validate_loan_eligibility(income, credit, payment_default)
-    print(results)
-
-
+# invoking the main method
 main()
+

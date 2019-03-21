@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 """
     Program to demonstrate Basics of Input/Output
 """
@@ -12,7 +14,7 @@ today = todays_date.strftime('%c')
 first = "First's"
 last = 'Last"s'
 
-print(f'Contains both Single and Double Quotes: {first} {last}')
+# print(f'Contains both Single and Double Quotes: {first} {last}')
 
 # Accepting Inputs from User
 name = input("Enter Your Name: ")

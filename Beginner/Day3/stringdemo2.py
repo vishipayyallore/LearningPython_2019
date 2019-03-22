@@ -1,6 +1,7 @@
 """
 """
 
+
 def weight_convertor():
     weight = float(input("Enter you weight: "))
     unit = input("(L)bs OR (K)gs: Default (Kgs) ").upper()
@@ -23,9 +24,9 @@ def weight_convertor():
 def password_verifier():
     password = input("Enter Password (8 - 12 characters): ")
 
-    if( len(password) < 8):
+    if(len(password) < 8):
         print("Password must be minimum 8 characters")
-    elif( len(password) > 12):
+    elif(len(password) > 12):
         print("Password must be less than 12 characters")
     else:
         if(password.find(' ') >= 0):
@@ -36,13 +37,13 @@ def password_verifier():
 
 def traverse_items(value):
     for part in value.split():
-        print(part, end= ' | ')
+        print(part, end=' | ')
 
-    print() # For generating empty line
+    print()  # For generating empty line
 
 
 def main():
-    
+
     name = input("Enter Long Name/Strings: ")
     traverse_items(name)
 
@@ -56,4 +57,3 @@ def main():
 
 # Invoking the main method
 main()
-        

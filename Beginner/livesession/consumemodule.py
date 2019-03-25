@@ -5,6 +5,9 @@ from stringmodule import *
 def perform_add():
     banner('Add Example', 100)
     try:
+
+        output = add_two_numbers(100, 'a')
+
         value1 = int(input('Enter Value 1: '))
         value2 = int(input('Enter Value 2: '))
         results = add_two_numbers(value1, value2)

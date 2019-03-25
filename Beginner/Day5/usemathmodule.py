@@ -1,5 +1,10 @@
 from mathmodule import *
 
+
+divide = divide_two_numbers(1, '0')
+print(f'Divide: {divide}')
+
+
 add = add_two_numbers(1, 2)
 print(f'Addition: {add}')
 

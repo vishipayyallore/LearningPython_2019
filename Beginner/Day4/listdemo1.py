@@ -2,10 +2,10 @@ from utilitiesmodule import *
 
 
 def displayDetails(title, value):
-        banner(length=100, message=title)
-        
-        print(f"Length: {len(value)}")
-        print(f"Value: {value}")
+    banner(length=100, message=title)
+
+    print(f"Length: {len(value)}")
+    print(f"Value: {value}")
 
 
 title = "List Data Type Demo"
@@ -30,4 +30,9 @@ numbers = [1, 2, 3, 4]
 universalSet = [lowerCase, upperCase, numbers]
 displayDetails("Nested List", universalSet)
 
+print(universalSet[0][1])
+print(universalSet[1][1])
+print(universalSet[2][1])
 
+for item in universalSet:
+    print(item)

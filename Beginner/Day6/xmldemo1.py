@@ -10,7 +10,7 @@ banner("Pretty Print", 100)
 
 print(type(xml_content))
 
-for person in xml_content.findall('.//person'):
+for person in xml_content.findall('person'):
     print(type(person))
     
     print(person.find('firstName').text, end = ' | ')

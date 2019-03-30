@@ -46,6 +46,7 @@ student_name = input("Enter student name: ")
 student_age = input("Enter student age: ")
 
 # student = add_student(student_name, roll_number, student_age)
-student = {"roll_number": roll_number, "name": student_name, "student_age": student_age}
+student = {"roll_number": roll_number,
+           "name": student_name, "student_age": student_age}
 
 save_file(student)

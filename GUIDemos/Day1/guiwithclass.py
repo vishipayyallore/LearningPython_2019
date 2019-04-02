@@ -15,16 +15,18 @@ class SampleApp(tk.Frame):
 
         self.create_widgets()
 
-
     def create_widgets(self):
-        self.button_sayhello = tk.Button(
-            self, text="Say Hello", font="Verdana 10 bold", fg="orange red", command=self.say_hello, bg='dodger blue')
+        self.button_sayhello = self.create_button(
+            "Say Hello", "orange red", 'dodger blue', self.say_hello)
         self.button_sayhello.pack()
 
-        self.quit = tk.Button(self, text="QUIT", fg="red",
-                              font="Verdana 10 bold", command=self.master.destroy, bg='dodger blue')
+        self.quit = self.create_button(
+            "Close Me", "red", 'dodger blue', self.master.destroy)
         self.quit.pack()
 
+    def create_button(self, label_text, fore_color, back_color, execute_function):
+        return tk.Button(self, text=label_text, fg=fore_color,
+                         font="Verdana 10 bold", command=execute_function, bg=back_color)
 
     def say_hello(self):
         print("hi there, everyone!")

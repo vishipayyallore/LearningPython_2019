@@ -1,7 +1,9 @@
 from tkinter import *
 
+
 def say_hello():
     print("hi there, everyone!")
+
 
 def create_first_gui():    
     win = Tk()
@@ -22,7 +24,6 @@ def create_first_gui():
     button.pack()
 
     win.mainloop()
-
 
 
 def main():

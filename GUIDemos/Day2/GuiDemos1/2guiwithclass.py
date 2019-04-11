@@ -1,5 +1,5 @@
 import tkinter as tk
-
+from tkinter import ttk
 
 class SampleApp(tk.Frame):
 
@@ -13,6 +13,9 @@ class SampleApp(tk.Frame):
         self.master.configure(bg='light blue')
         self.pack()
 
+        style = ttk.Style()
+        style.configure("TButton", foreground="green", background="blue")
+
         self.create_widgets()
 
     def create_widgets(self):
@@ -21,12 +24,11 @@ class SampleApp(tk.Frame):
         self.button_sayhello.pack()
 
         self.quit = self.create_button(
-            "Close Me", "red", 'dodger blue', self.master.destroy)
+            "Close Me", "red", 'dodger blue', self.master.quit)
         self.quit.pack()
 
     def create_button(self, label_text, fore_color, back_color, execute_function):
-        return tk.Button(self, text=label_text, fg=fore_color,
-                         font="Verdana 10 bold", command=execute_function, bg=back_color)
+        return ttk.Button(self, text=label_text, command=execute_function)
 
     def say_hello(self):
         print("hi there, everyone!")

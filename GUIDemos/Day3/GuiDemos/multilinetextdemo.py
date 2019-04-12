@@ -1,6 +1,10 @@
 import tkinter as tk
 
 window = tk.Tk()
+window.title('Multi Line Text Box Demo')
+window.geometry("700x500")
+window.configure(bg='light blue')
+
 multiline_text = tk.Text(window)
 
 # 1st line starting

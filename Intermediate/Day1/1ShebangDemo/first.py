@@ -3,33 +3,45 @@
     Program to demonstrate Basics of Input/Output
 """
 
+
 # Importing Modules
+import sys
 import datetime
 
-# Calculating the date
-todays_date = datetime.datetime.now()
-today = todays_date.strftime('%c')
+# Need to mention the path
+sys.path.insert(0, '../ModulesAndPyCache')
+from utilitiesmodule import banner
 
-first = "First's"
-last = 'Last"s'
 
-print(f'Contains both Single and Double Quotes: {first} {last}')
+class Person:
 
-# Accepting Inputs from User
-name = input("Enter Your Name: ")
-employee_id = int(input("Enter Employee Id: "))
-salary = float(input("Enter Salary: "))
-is_manager = bool(input("Enter Manager Status: "))
+    # Calculating the date
+    today = datetime.datetime.now().strftime('%c')
 
-# For simulating Error
-# employee_id = int("ABC")
+    def get_person_details(self):
+        # Accepting Inputs from User
+        self.name = input("Enter Your Name: ")
+        self.employee_id = int(input("Enter Employee Id: "))
+        self.salary = float(input("Enter Salary: "))
+        self.is_manager = bool(input("Enter Manager Status: "))
 
-# Displaying the output
-print("=====================================================")
-print(f"| Employee Details | Date: {today} |")
-print("=====================================================")
-print(f"\tName: {name}")
-print(f"\tId: {employee_id}")
-print(f"\tSalary: {salary}")
-print(f"\tIs Manager: {is_manager}")
-print("----------------------------------------------------")
+    def display_person_details(self):
+        title = f"| Employee Details | Date: {self.today} |"
+
+        # Displaying the output
+        banner(title, 100)
+        print(f"\tName: {self.name}")
+        print(f"\tId: {self.employee_id}")
+        print(f"\tSalary: {self.salary}")
+        print(f"\tIs Manager: {self.is_manager}")
+        print("----------------------------------------------------")
+
+
+def main():
+    person = Person()
+    person.get_person_details()
+    person.display_person_details()
+
+
+if __name__ == "__main__":
+    main()

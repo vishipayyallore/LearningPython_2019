@@ -1,13 +1,15 @@
 """Module to have basic math functions
 """
 
-def banner(message, length, header='=', footer='-'):
+def banner(message, header='=', footer='-'):
     """Method to divide two divide_two_numbers
 
         ARGUMENTS: 
             Value1: first value
             Value2: second value
     """
+
+    length = len(message) + 1
 
     print()
     print(header * length)

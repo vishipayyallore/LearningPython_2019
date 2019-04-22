@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 
+
 window = tk.Tk()
 window.title('Button Demo')
 window.geometry("300x80")

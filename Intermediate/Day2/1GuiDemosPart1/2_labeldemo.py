@@ -1,6 +1,5 @@
 from tkinter import *
 
-
 win = Tk()
 win.title('Lable Demo')
 win.geometry("250x100")

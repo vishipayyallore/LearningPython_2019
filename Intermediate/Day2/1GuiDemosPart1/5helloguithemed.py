@@ -4,7 +4,6 @@ from tkinter.ttk import *
 def say_hello():
     print("hi there, everyone!")
 
-
 win = Tk()
 win.title('Hello Python')
 win.geometry("250x100")

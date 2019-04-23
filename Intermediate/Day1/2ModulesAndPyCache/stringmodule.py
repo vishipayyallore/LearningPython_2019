@@ -8,7 +8,7 @@ def string_strip(stringvalue: str):
             Value1: first value
             Value2: second value
     """
-    return "".join(stringvalue.split())
+    return "".join(stringvalue.split()).strip()
 
 
 def string_mask(stringvalue: str):

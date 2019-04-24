@@ -5,7 +5,7 @@ window.title('Multi Line Text Box Demo')
 window.geometry("700x500")
 window.configure(bg='light blue')
 
-multiline_text = tk.Text(window)
+multiline_text = tk.Text(window, foreground="blue", font="Verdana 10 bold")
 
 # 1st line starting
 multiline_text.insert('1.0', "This is Text box.")

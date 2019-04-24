@@ -1,10 +1,11 @@
 import requests
+import sys
+from urllib.request import urlopen
 
 # remote_url = 'https://www.python.org/'
-remote_url = 'https://github.com/timeline.json'
-http_request = requests.get(remote_url)
+# remote_url = 'http://sixty-north.com/c/t.txt'
+remote_url = 'http://go.codeschool.com/spamvanmenu'
 
-print(f'Status Code: {http_request.status_code}')
-print(f'Output\n {http_request.text}')
-    
-
+with urlopen(remote_url) as content:
+    for line in content:
+        print(line)

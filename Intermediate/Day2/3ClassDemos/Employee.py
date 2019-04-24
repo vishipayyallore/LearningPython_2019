@@ -33,13 +33,13 @@ def main():
     print(associate1)
 
     associate2 = QA('Mathew Philips', 21)
-    print(associate1)
-
+    print(associate2)
 
     employee = Employee(associate1)
     employee.display_details()
 
     employee = Employee(associate2)
     employee.display_details()
+
 
 main()

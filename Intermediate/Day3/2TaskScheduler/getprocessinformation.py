@@ -1,6 +1,4 @@
 import subprocess
-import json
-from pprint import pprint as pp
 import datetime
 
 # Retrieving the processes information
@@ -13,9 +11,3 @@ outputfilepath = f"./datastore/process_{today}.log"
 with open(outputfilepath, 'a') as outputfile:
     outputfile.write(pl.decode('utf-8'))
 
-
-
-
-
-# print(pl.decode('utf-8'))
-# print( today)

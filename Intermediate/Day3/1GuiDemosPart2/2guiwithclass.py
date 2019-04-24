@@ -13,7 +13,6 @@ class SampleApp(tk.Frame):
 
         self.create_widgets()
 
-
     def create_main_window(self):
         self.master.title('GUI with Class')
         self.master.geometry("250x100")

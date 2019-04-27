@@ -1,4 +1,11 @@
 {
     "python.pythonPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Python37_64\\python.exe",
-    "python.linting.pylintEnabled": true
+    "python.linting.pylintEnabled": true,
+    "python.autoComplete.extraPaths": [
+        "C:\\LordKrishna\\GitHub\\LearningPython_2019\\Intermediate\\Day1\\2ModulesAndPyCache"
+    ],
+    "python.linting.pylintArgs": [
+        "--errors-only",
+        "--generated-members=2ModulesAndPyCache.* ,utilitiesmodule.*"
+    ]
 }

@@ -3,14 +3,17 @@
     Program to demonstrate Basics of Input/Output
 """
 
-
 # Importing Modules
 import sys
 import datetime
 
 # Need to mention the path
-sys.path.insert(0, '../2ModulesAndPyCache')
+# sys.path.insert(0, '../2ModulesAndPyCache')
+sys.path.append('../2ModulesAndPyCache')
+
+#pylint: disable=E0401
 from utilitiesmodule import banner
+#pylint: disable=E0401
 
 
 class Person:

@@ -16,39 +16,44 @@ class DataTypesDemo:
 # ----------------------------------
 
 
-print("----- Tuples Demo -----")
+def main():
 
-# Defining a tuple without any element
-tupleEmpty = ()
-dataTypeObject = DataTypesDemo(tupleEmpty)
-dataTypeObject.displayDetails()
+    print("----- Tuples Demo -----")
 
-#  Person Tuples
-tuplePerson = (1, 'Shiva Sai', 24, 567.90)
-dataTypeObject = DataTypesDemo(tuplePerson)
-dataTypeObject.displayDetails()
+    # Defining a tuple without any element
+    tupleEmpty = ()
+    dataTypeObject = DataTypesDemo(tupleEmpty)
+    dataTypeObject.displayDetails()
 
-#  Nested Tuples
-tupleEmployee = (1, 'A1001', 24)
-dataTypeObject = DataTypesDemo((tuplePerson, tupleEmployee))
-dataTypeObject.displayDetails()
+    #  Person Tuples
+    tuplePerson = (1, 'Shiva Sai', 24, 567.90)
+    dataTypeObject = DataTypesDemo(tuplePerson)
+    dataTypeObject.displayDetails()
 
-# Repetition Tuple
-repeatTuple = ('Python 3',) * 4
-dataTypeObject = DataTypesDemo(repeatTuple)
-dataTypeObject.displayDetails()
+    #  Nested Tuples
+    tupleEmployee = (1, 'A1001', 24)
+    dataTypeObject = DataTypesDemo((tuplePerson, tupleEmployee))
+    dataTypeObject.displayDetails()
 
-# Slicing with tuples
-sample_tuple = (0, 1, 2, 3, 4)
+    # Repetition Tuple
+    repeatTuple = ('Python 3',) * 4
+    dataTypeObject = DataTypesDemo(repeatTuple)
+    dataTypeObject.displayDetails()
 
-withoutFirstItem = sample_tuple[1:]
-dataTypeObject = DataTypesDemo(withoutFirstItem)
-dataTypeObject.displayDetails()
+    # Slicing with tuples
+    sample_tuple = (0, 1, 2, 3, 4)
 
-tupleReverse = sample_tuple[::-1]
-dataTypeObject = DataTypesDemo(tupleReverse)
-dataTypeObject.displayDetails()
+    withoutFirstItem = sample_tuple[1:]
+    dataTypeObject = DataTypesDemo(withoutFirstItem)
+    dataTypeObject.displayDetails()
 
-from3to5Tuple = sample_tuple[2:5]
-dataTypeObject = DataTypesDemo(from3to5Tuple)
-dataTypeObject.displayDetails()
+    tupleReverse = sample_tuple[::-1]
+    dataTypeObject = DataTypesDemo(tupleReverse)
+    dataTypeObject.displayDetails()
+
+    from3to5Tuple = sample_tuple[2:5]
+    dataTypeObject = DataTypesDemo(from3to5Tuple)
+    dataTypeObject.displayDetails()
+
+if __name__ == "__main__":
+    main()

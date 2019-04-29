@@ -10,25 +10,30 @@ class SetDataTypeDemo:
         print(f'SetDataTypeDemo.Instances: {self.Instances}')
         print(f'{value}')
 
-title = "Set Data Type Demo"
 
-setDataType = SetDataTypeDemo()
+def main():
+    title = "Set Data Type Demo"
 
-# set can't store duplicate
-numbersSet = { 3, 7, 11, 15, 15, 15 }
-setDataType.displaySetValues(title, numbersSet)
+    setDataType = SetDataTypeDemo()
 
-# Mixed data types set
-mixedDataSet = {11, 1.1, "11", (1, 2)}
-setDataType.displaySetValues(title, mixedDataSet)
+    # set can't store duplicate
+    numbersSet = { 3, 7, 11, 15, 15, 15 }
+    setDataType.displaySetValues(title, numbersSet)
 
-# using set() method
-mixedDataSet1 = set([11, 1.1, "11", "Shiva", (1, 2)])
-setDataType.displaySetValues(title, mixedDataSet1)
+    # Mixed data types set
+    mixedDataSet = {11, 1.1, "11", (1, 2)}
+    setDataType.displaySetValues(title, mixedDataSet)
 
-listData = [11, 1.1, "11", "Shiva Sai", (1, 2)]
-listData.append("Rajesh")
-setDataType.displaySetValues("Display List", listData)
+    # using set() method
+    mixedDataSet1 = set([11, 1.1, "11", "Shiva", (1, 2)])
+    setDataType.displaySetValues(title, mixedDataSet1)
 
-mixedDataSet2 = set(listData) 
-setDataType.displaySetValues(title, mixedDataSet2)
+    listData = [11, 1.1, "11", "Shiva Sai", (1, 2)]
+    listData.append("Rajesh")
+    setDataType.displaySetValues("Display List", listData)
+
+    mixedDataSet2 = set(listData) 
+    setDataType.displaySetValues(title, mixedDataSet2)
+
+if __name__ == "__main__":
+    main()

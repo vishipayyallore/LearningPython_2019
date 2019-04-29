@@ -32,39 +32,44 @@ class SetDataTypeDemo:
 
 
 # --------------------------------------------------------------------------------
-title = "Set Data Type Demo"
 
-setDataType = SetDataTypeDemo()
+def main():
+    title = "Set Data Type Demo"
 
-oddNumbers = {1, 3, 5, 7, 9, 22}
-evenNumbers = {2, 4, 6, 8, 0, 22}
+    setDataType = SetDataTypeDemo()
 
-setDataType.displaySetValues(title, oddNumbers)
-setDataType.displaySetValues(title, evenNumbers)
-setDataType.displaySetValues(title, (oddNumbers | evenNumbers))
+    oddNumbers = {1, 3, 5, 7, 9, 22}
+    evenNumbers = {2, 4, 6, 8, 0, 22}
 
-setDataType.displaySetValues("Union", oddNumbers.union(evenNumbers))
+    setDataType.displaySetValues(title, oddNumbers)
+    setDataType.displaySetValues(title, evenNumbers)
+    setDataType.displaySetValues(title, (oddNumbers | evenNumbers))
 
-setDataType.displaySetValues(
-    "Intersection", oddNumbers.intersection(evenNumbers))
-setDataType.displaySetValues("Intersection", oddNumbers & evenNumbers)
+    setDataType.displaySetValues("Union", oddNumbers.union(evenNumbers))
 
-setDataType.displaySetValues("Difference", oddNumbers - evenNumbers)
-setDataType.displaySetValues(
-    "Difference", oddNumbers.difference(evenNumbers))
+    setDataType.displaySetValues(
+        "Intersection", oddNumbers.intersection(evenNumbers))
+    setDataType.displaySetValues("Intersection", oddNumbers & evenNumbers)
 
-setDataType.displaySetValues("Symmetric Difference", oddNumbers ^ evenNumbers)
-setDataType.displaySetValues(
-    "Symmetric Difference", oddNumbers.symmetric_difference(evenNumbers))
+    setDataType.displaySetValues("Difference", oddNumbers - evenNumbers)
+    setDataType.displaySetValues(
+        "Difference", oddNumbers.difference(evenNumbers))
 
-setDataType.displayIndividualElements(
-    "Display Individual Elements", oddNumbers)
+    setDataType.displaySetValues("Symmetric Difference", oddNumbers ^ evenNumbers)
+    setDataType.displaySetValues(
+        "Symmetric Difference", oddNumbers.symmetric_difference(evenNumbers))
 
-print(f"Is '22' exists in oddNumbers set? {22 in oddNumbers}")
-print(f"Is '44' exists in oddNumbers set? {44 in oddNumbers}")
+    setDataType.displayIndividualElements(
+        "Display Individual Elements", oddNumbers)
+
+    print(f"Is '22' exists in oddNumbers set? {22 in oddNumbers}")
+    print(f"Is '44' exists in oddNumbers set? {44 in oddNumbers}")
 
 
-# Frozen Set
-names = frozenset(["Roufeed", "Abhishek", "Soumya", "Mahesh"])
-setDataType.displaySetValues("Frozen Set", names)
+    # Frozen Set
+    names = frozenset(["Roufeed", "Abhishek", "Soumya", "Mahesh"])
+    setDataType.displaySetValues("Frozen Set", names)
 
+
+if __name__ == "__main__":
+    main()

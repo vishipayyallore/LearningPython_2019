@@ -17,16 +17,21 @@ class NumberPowerTwo:
         else:
             raise StopIteration
 
-number = 5
-numberpower = NumberPowerTwo(number)
-itr = iter(numberpower)
+def main():
+    number = 5
+    numberpower = NumberPowerTwo(number)
+    itr = iter(numberpower)
 
-try:
-    for i in range(1, number+3):
-        print(next(itr))
-except StopIteration:
-    print(f'Stopping the loop.')
+    try:
+        for i in range(1, number+3):
+            print(next(itr))
+    except StopIteration:
+        print(f'Stopping the loop.')
 
-print('Using in for loop')
-for val in NumberPowerTwo(number):
-    print(val)
+    print('Using in for loop')
+    for val in NumberPowerTwo(number):
+        print(val)
+
+if __name__ == "__main__":
+    main()
+

@@ -1,8 +1,10 @@
 {
-    "python.pythonPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Python37_64\\python.exe",
+    // "python.pythonPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Python37_64\\python.exe",
+    "python.pythonPath": "C:\\LordKrishna\\GitHub\\LearningPython_2019\\Intermediate\\Day4\\1VEnvAndPipInstallDemos\\Scripts\\python.exe",
     "python.linting.pylintEnabled": true,
     "python.autoComplete.extraPaths": [
-        "C:\\LordKrishna\\GitHub\\LearningPython_2019\\Intermediate\\Day1\\2ModulesAndPyCache"
+        "C:\\LordKrishna\\GitHub\\LearningPython_2019\\Intermediate\\Day1\\2ModulesAndPyCache",
+        "C:\\LordKrishna\\GitHub\\LearningPython_2019\\Intermediate\\Day4\\1VEnvAndPipInstallDemos\\Lib\\site-packages"
     ],
     "python.linting.pylintArgs": [
         "--errors-only",

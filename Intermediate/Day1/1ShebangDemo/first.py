@@ -8,7 +8,6 @@ import sys
 import datetime
 
 # Need to mention the path
-# sys.path.insert(0, '../2ModulesAndPyCache')
 sys.path.append('../2ModulesAndPyCache')
 
 #pylint: disable=E0401

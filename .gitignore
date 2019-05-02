@@ -25,7 +25,6 @@ wheels/
 *.egg
 MANIFEST
 Include/
-Scripts/
 
 
 # PyInstaller
@@ -106,3 +105,22 @@ venv.bak/
 # mypy
 .mypy_cache/
 Beginner/Day6/datastore/c2gen5_beta_t.XML
+/Scripts/*
+Intermediate/Day4/1VEnvAndPipInstallDemos/Scripts
+/_scripts/**
+Intermediate/Day4/1VEnvAndPipInstallDemos/_Scripts/Activate.ps1
+Intermediate/Day4/1VEnvAndPipInstallDemos/_Scripts/activate
+Intermediate/Day4/1VEnvAndPipInstallDemos/_Scripts/activate.bat
+Intermediate/Day4/1VEnvAndPipInstallDemos/_Scripts/deactivate.bat
+Intermediate/Day4/1VEnvAndPipInstallDemos/_Scripts/easy_install.exe
+Intermediate/Day4/1VEnvAndPipInstallDemos/_Scripts/easy_install-3.7.exe
+Intermediate/Day4/1VEnvAndPipInstallDemos/_Scripts/epylint.exe
+Intermediate/Day4/1VEnvAndPipInstallDemos/_Scripts/isort.exe
+Intermediate/Day4/1VEnvAndPipInstallDemos/_Scripts/pip.exe
+Intermediate/Day4/1VEnvAndPipInstallDemos/_Scripts/pip3.exe
+Intermediate/Day4/1VEnvAndPipInstallDemos/_Scripts/pip3.7.exe
+Intermediate/Day4/1VEnvAndPipInstallDemos/_Scripts/pylint.exe
+Intermediate/Day4/1VEnvAndPipInstallDemos/_Scripts/pyreverse.exe
+Intermediate/Day4/1VEnvAndPipInstallDemos/_Scripts/python.exe
+Intermediate/Day4/1VEnvAndPipInstallDemos/_Scripts/pythonw.exe
+Intermediate/Day4/1VEnvAndPipInstallDemos/_Scripts/symilar.exe

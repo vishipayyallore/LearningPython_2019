@@ -10,5 +10,6 @@ def main():
     twoorthree_char_names = filter_data(lambda x : len(x) >= 2, names)
     print(twoorthree_char_names)
 
+
 if __name__ == "__main__":
     main()

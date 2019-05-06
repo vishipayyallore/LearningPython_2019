@@ -3,7 +3,7 @@ def modify_data(lambda_expression, listdata):
 
 
 def main():
-    names = ['a', 'bb', 'ccc', 'dd']
+    names = ['shiva', 'sai', 'Azim', 'Mathews', 'samules']
     capitalize_names = modify_data(lambda x: x.capitalize(), names)
     print(capitalize_names)
 

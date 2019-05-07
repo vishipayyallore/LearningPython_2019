@@ -1,7 +1,9 @@
 names = ["shiva", "sai", "azim", "mathews", "philips", "samule"]
 
 items = [name.capitalize() for name in names]
+print(items)
 
+items = [len(name) for name in names]
 print(items)
 
 

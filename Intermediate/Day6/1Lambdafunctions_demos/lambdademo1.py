@@ -9,7 +9,13 @@ power_lambda = lambda number: number * number
 
 
 def main():
-    print(power_lambda(5))
+    number = 5
+
+    # With Function
+    print(f'With Function Call: {get_power(number)}')
+
+    # With Lambda
+    print(f'With Lambda: {power_lambda(number)}')
 
 
 if __name__ == "__main__":

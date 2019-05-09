@@ -8,3 +8,8 @@ with open(filepath, 'rb') as empfile:
 
 
 pp(employees)
+
+for id, name in employees.items():
+    print(id, name)
+
+    

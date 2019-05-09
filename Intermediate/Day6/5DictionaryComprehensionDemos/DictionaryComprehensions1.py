@@ -1,10 +1,10 @@
 from pprint import pprint as pp
 
 employees = {
-    'A101': 'Shiva',
-    'A102': 'Sai',
-    'A103': 'Mathews',
-    'A104': 'Philips',
+    'A101': 'shiva',
+    'A102': 'sai',
+    'A103': 'mathews',
+    'A104': 'philips',
 }
 
 for empid, empname in employees.items():
@@ -12,5 +12,5 @@ for empid, empname in employees.items():
 
 pp(employees)
 
-employees_name_id = { empname: empid for empid, empname in employees.items()}
+employees_name_id = { empname.capitalize(): empid for empid, empname in employees.items()}
 pp(employees_name_id)

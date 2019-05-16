@@ -1,21 +1,38 @@
 import tkinter as tk
 from tkinter import ttk
 
-window = tk.Tk()
-window.title('Combo Box Demo')
-window.geometry("300x100")
-window.configure(bg='light blue')
+window = None
 
-selected_item = tk.StringVar()
+def create_main_window():
+    global window
 
-combobox_languages = ttk.Combobox(
-    window,
-    textvariable=selected_item,
-    values=["C#", "Java", "Python"]
-)
-combobox_languages.pack()
+    window = tk.Tk()
+    window.title('Check Box Demo')
+    window.geometry("300x100")
+    window.configure(bg='light blue')
 
-label_selected_language = ttk.Label(window, textvariable=selected_item)
-label_selected_language.pack()
+def create_combobox():
+    selected_item = tk.StringVar()
 
-window.mainloop()
+    combobox_languages = ttk.Combobox(
+        window,
+        textvariable=selected_item,
+        values=["C#", "Java", "Python"]
+    )
+    combobox_languages.pack()
+
+    label_selected_language = ttk.Label(window, textvariable=selected_item)
+    label_selected_language.pack()
+
+    window.mainloop()
+
+
+def main():
+    create_main_window()
+
+    create_combobox()
+
+
+if __name__ == "__main__":
+    main()
+

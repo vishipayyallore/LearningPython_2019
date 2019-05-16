@@ -4,7 +4,7 @@ connection = sqlite3.connect('./data/employees.db')
 
 create_table = '''CREATE TABLE employees (ID INT PRIMARY KEY     NOT NULL, NAME TEXT NOT NULL);'''
 
-connection.execute(create_table)
+connection.execute(create_table, )
 
 insert_data = '''INSERT INTO employees values (101, 'Rajesh'); '''
 connection.execute(insert_data);

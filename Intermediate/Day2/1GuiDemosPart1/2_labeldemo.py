@@ -1,7 +1,7 @@
 from tkinter import *
 
 window = None
-
+ 
 
 def create_main_window():
     global window

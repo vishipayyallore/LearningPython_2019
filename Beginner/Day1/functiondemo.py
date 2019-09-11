@@ -17,7 +17,7 @@ def get_employee_details():
     '''
         Method to accept into for Employee
     '''
-    
+
     # using global variables
     global name, employee_id, salary, is_manager
 
@@ -26,6 +26,7 @@ def get_employee_details():
     employee_id = int(input("Enter Employee Id: "))
     salary = float(input("Enter Salary: "))
     is_manager = bool(input("Enter Manager Status: "))
+
 
 def show_employee_details():
     """

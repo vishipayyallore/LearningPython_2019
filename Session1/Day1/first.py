@@ -25,7 +25,6 @@ salary = float(input("Enter Salary: "))
 is_manager = bool(input("Enter Manager Status: "))
 
 
-
 # Displaying the output
 print("====================================================")
 print(f"Employee Details | Date: {today} |")

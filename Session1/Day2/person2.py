@@ -24,5 +24,8 @@ def dispaly_details():
 
 
 # Invoking the methods
+dispaly_details()   # F10
+dispaly_details()   # F11
+dispaly_details()   # Shift + F11
 accept_details()
 dispaly_details()

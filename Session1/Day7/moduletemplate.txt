@@ -1,0 +1,12 @@
+def function_name(parameters) -> value:
+    """Method to return sum of two numbers
+
+        USAGE: sum = sum_two_numbers(value1, value2)
+    """
+    # Main Logic
+
+def main():
+    # Main Logic
+
+if __name__ == "__main__":
+    main()

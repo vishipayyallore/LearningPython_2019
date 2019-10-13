@@ -1,6 +1,11 @@
 {
     "python.pythonPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Python37_64\\python.exe",
+    "python.linting.pylintEnabled": true,
     "python.autoComplete.extraPaths": [
         "C:\\LordKrishna\\GitHub\\LearningPython_2019\\Session1\\CustomModules"
     ],
+    "python.linting.pylintArgs": [
+        "--errors-only",
+        "--generated-members=CustomModules.*"
+    ]
 }

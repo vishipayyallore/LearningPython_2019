@@ -1,0 +1,2 @@
+import ../CustomModules/bannermodule
+

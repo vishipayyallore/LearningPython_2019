@@ -11,7 +11,7 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "cwd": "${fileDirname}",
-            "args":["10", "20"]
+            "args":["1001", "20"]
         }
     ]
 }

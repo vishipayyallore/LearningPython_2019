@@ -2,6 +2,7 @@ import sys
 
 value1 = sys.argv[1]
 
+
 while(True):
     value = input('Enter a Number for Prime verification (Q for Quit): ')
 

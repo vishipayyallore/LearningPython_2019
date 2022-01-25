@@ -12,6 +12,9 @@ connection.execute(insert_data);
 insert_data = 'INSERT INTO students values (102, \'Mathews\');'
 connection.execute(insert_data);
 
+insert_data = 'INSERT INTO students values (103, \'Misbah\');'
+connection.execute(insert_data);
+
 select_data = 'SELECT * FROM students;'
 datasets = connection.execute(select_data);
 
